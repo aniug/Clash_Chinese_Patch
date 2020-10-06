@@ -1,0 +1,33 @@
+1、下载并安装nodejs  快速直达下载---> https://nodejs.org/zh-cn/
+2、CMD
+3、在CMD输入 npm -v ，验证我们刚才的nodejs 是否安装成功，通常会返回版本号
+（否则手动配置环境变量（set npm=”npm的完整路径”）
+4、安装 asar ，npm install -g asar ，安装完成后输入 asar --version 检查 asar 是否正常。通常返回版本号即为正常。
+（若是没有返回版本号，请输入 set asar="路径" ，其中的路径为下图红色部分，请注意看自己的安装位置）
+5、找到 Clash 的语言包文件 app.asar ，备份该文件，并记录文件的绝对位置
+作者的 Clash 的语言包（ app.asar ）的位置在 D:\Clash.for.Windows-0.12.0-win\resources 文件夹下
+6、在CMD中输入 d: 切换盘符，用 CD 进入 Clash 的语言包目录 cd D:\Clash.for.Windows-0.12.0-win\resources
+7、开始解包 app.asar ，输入命令 asar extract app.asar D:\Clash.for.Windows-0.12.0-win\resources\bak
+（这样解包的文件会在D:\Clash.for.Windows-0.12.0-win\resources\bak文件夹中）
+8、打开文件夹 D:\Clash.for.Windows-0.12.0-win\resources\bak\dist\electron ，在里面找到 renderer.js 文件，选择用记事本或是其他.JS编辑器打开。
+9、开始汉化，在记事本中按下快捷键 CTRL+H，进入替换界面，勾选上“区分大小写”。严格按照如下格式进行替换，
+10、重新打包，输入 asar pack D:\Clash.for.Windows-0.12.0-win\resources\bak app.asar
+（上面命令的 D:\Clash.for.Windows-0.12.0-win\resources\bak 为刚刚解包的文件夹 ）
+
+
+总结用到的命令
+验证nodejs 安装：npm -v
+安装 asar ：npm install -g asar
+验证asar：asar --version
+选择磁盘：d:
+选择磁盘文件夹：cd D:\Clash.for.Windows-0.12.0-win\resources
+解包：asar extract app.asar D:\Clash.for.Windows-0.12.0-win\resources\bak
+打包：asar pack D:\Clash.for.Windows-0.12.0-win\resources\bak app.asar
+
+根据汉化版再次修改的内容如下 若作者赞同请更新一下 我好像上传不了大于25M的文件
+
+Download profile failed with error: HTTP Response Status Code       下载配置文件失败，出现以下错误：HTTP响应状态代码
+Download profile failed with error:          下载配置文件失败，出现错误：
+["global", "rule", "direct", "script"]          [“global-全局”，“rule-规则”，“direct-直接”，“script-脚本”]
+[e._v("Import")])])]), e._v(" "), n("draggable",              [e._v("Open")])])]), e._v(" "), n("draggable",
+ 
