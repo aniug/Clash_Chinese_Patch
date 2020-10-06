@@ -1,3 +1,4 @@
+我的汉化方法是网上搜到的竟然可行记录一下
 1、下载并安装nodejs  快速直达下载---> https://nodejs.org/zh-cn/
 2、CMD
 3、在CMD输入 npm -v ，验证我们刚才的nodejs 是否安装成功，通常会返回版本号
@@ -24,7 +25,7 @@
 解包：asar extract app.asar D:\Clash.for.Windows-0.12.0-win\resources\bak
 打包：asar pack D:\Clash.for.Windows-0.12.0-win\resources\bak app.asar
 
-根据汉化版再次修改的内容如下 若作者赞同请更新一下 我好像上传不了大于25M的文件
+根据汉化版再修改了内容如下  请作者大佬检查作业https://oox.lanzoui.com/iO2xbh80g8j 大于25M的文件我好像上传不了GitHub
 
 Download profile failed with error: HTTP Response Status Code       下载配置文件失败，出现以下错误：HTTP响应状态代码
 Download profile failed with error:          下载配置文件失败，出现错误：
